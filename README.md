@@ -1,7 +1,7 @@
 # Phoenix Reception
 
 Marketing site for **Phoenix Reception** — the AI phone answering and lead
-recovery platform by Phoenix Rising Systems. Plain HTML/CSS/JS, no build
+recovery platform by Phoenix Rising Automation. Plain HTML/CSS/JS, no build
 step, so it's ready to upload straight to shared hosting (built for **20i**).
 
 ## Structure
