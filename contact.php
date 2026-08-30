@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-const RECIPIENT_EMAIL = 'hello@phoenixreceptionai.com'; // TODO: set to the real inbox
+const RECIPIENT_EMAIL = 'hello@phoenixrisingautomation.com';
 const SITE_NAME = 'Phoenix Reception';
 
 header('Content-Type: application/json');

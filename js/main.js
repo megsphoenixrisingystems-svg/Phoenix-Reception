@@ -7,7 +7,7 @@
 const PHOENIX_CONFIG = {
   phone: "+1 (555) 010-2929", // TODO: replace with real business line
   phoneHref: "tel:+15550102929",
-  email: "hello@phoenixreceptionai.com", // TODO: replace with real inbox
+  email: "hello@phoenixrisingautomation.com",
   calendlyUrl: "", // TODO: paste a Calendly/Cal.com link to send "Book a Demo" straight there
 };
 

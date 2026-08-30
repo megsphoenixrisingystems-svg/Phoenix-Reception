@@ -19,25 +19,24 @@ robots.txt, sitemap.xml
 
 ## Before you go live
 
-Edit the config block at the top of **`js/main.js`**:
+Done:
 
-```js
-const PHOENIX_CONFIG = {
-  phone: "+1 (555) 010-2929",     // real business line
-  phoneHref: "tel:+15550102929",
-  email: "hello@phoenixreceptionai.com",
-  calendlyUrl: "",                // paste a Calendly/Cal.com link and
-                                   // "Book a Demo" buttons will jump straight there
-};
-```
+- ✅ Lead email set to `hello@phoenixrisingautomation.com` everywhere
+  (`js/main.js`, `contact.php`'s `RECIPIENT_EMAIL`, and every footer/contact link)
 
-Also replace the placeholder phone/email in the footers of `index.html`,
-`pricing.html`, and `contact.html` (search for `555-010-2929` and
-`hello@phoenixreceptionai.com`), and set `RECIPIENT_EMAIL` at the top of
-**`contact.php`** to the inbox that should receive lead submissions.
+Still placeholder — update these before launch:
 
-Swap `https://www.phoenixreceptionai.com/` in `robots.txt` and
-`sitemap.xml` for your real domain once it's live.
+- **Phone number** — still `(555) 010-2929` in `js/main.js`
+  (`PHOENIX_CONFIG.phone` / `phoneHref`) and in the footers of
+  `index.html`, `pricing.html`, and `contact.html`. Search for
+  `555-010-2929` and `555) 010-2929` to find every spot.
+- **Domain** — `robots.txt` and `sitemap.xml` still point at
+  `https://www.phoenixreceptionai.com/`; swap in the real domain once
+  it's registered/confirmed.
+- **Calendly/booking link** — `PHOENIX_CONFIG.calendlyUrl` in
+  `js/main.js` is empty, so "Book a Demo" currently routes to the
+  contact form. Paste a Calendly/Cal.com link there to send it straight
+  to a calendar instead.
 
 ## Deploying to 20i
 
