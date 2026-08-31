@@ -17,44 +17,41 @@ assets/         Favicon / logo mark (SVG)
 robots.txt, sitemap.xml
 ```
 
-## Before you go live
+## Site config
 
-Done:
+All real business info is wired in:
 
-- ✅ Lead email set to `hello@phoenixrisingautomation.com` everywhere
-  (`js/main.js`, `contact.php`'s `RECIPIENT_EMAIL`, and every footer/contact link)
+- **Lead email:** `hello@phoenixrisingautomation.com` (`js/main.js`, `contact.php`'s `RECIPIENT_EMAIL`, and every footer/contact link)
+- **Phone:** (850) 694-1657 (`js/main.js` and every footer)
+- **Booking link:** [Cal.com](https://cal.com/phoenixrisingautomation-meghan/30min) — every "Book a Demo" button opens this directly instead of the contact form
+- **Domain:** `reception.phoenixrisingautomation.com` — a subdomain of the main Phoenix Rising Automation site (`robots.txt`, `sitemap.xml`)
 
-Still placeholder — update these before launch:
-
-- **Phone number** — still `(555) 010-2929` in `js/main.js`
-  (`PHOENIX_CONFIG.phone` / `phoneHref`) and in the footers of
-  `index.html`, `pricing.html`, and `contact.html`. Search for
-  `555-010-2929` and `555) 010-2929` to find every spot.
-- **Domain** — `robots.txt` and `sitemap.xml` still point at
-  `https://www.phoenixreceptionai.com/`; swap in the real domain once
-  it's registered/confirmed.
-- **Calendly/booking link** — `PHOENIX_CONFIG.calendlyUrl` in
-  `js/main.js` is empty, so "Book a Demo" currently routes to the
-  contact form. Paste a Calendly/Cal.com link there to send it straight
-  to a calendar instead.
+Nothing left to swap before launch — just deploy.
 
 ## Deploying to 20i
 
-1. In the 20i control panel (my.20i.com), open your hosting package's
-   **File Manager**, or connect via FTP/SFTP (Hosting → your package →
-   FTP & SSH Users for credentials).
-2. Upload the entire contents of this folder into `public_html/`
-   (or your chosen document root) — keep the `css/`, `js/`, and `assets/`
-   folders intact.
+Phoenix Reception lives on the `reception` subdomain of
+`phoenixrisingautomation.com`, so it needs its own document root
+separate from the main site.
+
+1. In the 20i control panel (my.20i.com), open the hosting package for
+   `phoenixrisingautomation.com` and go to **Domains → Subdomains**
+   (or **Manage Websites**) and add `reception` as a subdomain — this
+   creates a folder (typically `public_html/reception/`) and its own
+   free SSL certificate.
+2. Open **File Manager** for that subdomain folder, or connect via
+   FTP/SFTP (Hosting → your package → FTP & SSH Users for credentials),
+   and upload the entire contents of this repo into it — keep the
+   `css/`, `js/`, and `assets/` folders intact.
 3. 20i's stack includes PHP already, so `contact.php` works with no
    extra setup. If outbound mail is disabled for your package, enable
    it under **Email → Email Settings**, or contact 20i support.
-4. Point your domain at the hosting package (20i → Domains, or update
-   the domain's nameservers if it's registered elsewhere) and add the
-   free SSL certificate under **SSL** in the control panel.
-5. Visit the live domain and submit a test lead through `contact.html`
-   to confirm mail delivery, then check spam folders if it doesn't
-   arrive.
+4. Confirm the SSL certificate for `reception.phoenixrisingautomation.com`
+   is issued under **SSL** in the control panel (20i usually provisions
+   this automatically once the subdomain resolves).
+5. Visit `https://reception.phoenixrisingautomation.com` and submit a
+   test lead through `contact.html` to confirm mail delivery, then
+   check spam folders if it doesn't arrive.
 
 ## Local preview
 

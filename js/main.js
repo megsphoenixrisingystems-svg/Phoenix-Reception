@@ -5,10 +5,10 @@
    ========================================================================== */
 
 const PHOENIX_CONFIG = {
-  phone: "+1 (555) 010-2929", // TODO: replace with real business line
-  phoneHref: "tel:+15550102929",
+  phone: "(850) 694-1657",
+  phoneHref: "tel:+18506941657",
   email: "hello@phoenixrisingautomation.com",
-  calendlyUrl: "", // TODO: paste a Calendly/Cal.com link to send "Book a Demo" straight there
+  calendlyUrl: "https://cal.com/phoenixrisingautomation-meghan/30min",
 };
 
 document.addEventListener("DOMContentLoaded", () => {
