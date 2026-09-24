@@ -199,7 +199,7 @@ p { color: var(--body-text); margin: 0 0 16px; }
   gap: 10px;
 }
 
-.brand .mark { width: 30px; height: 30px; flex: none; }
+.brand .mark { width: 34px; height: auto; flex: none; }
 
 .brand-name {
   font-family: var(--font-display);
@@ -568,6 +568,11 @@ p { color: var(--body-text); margin: 0 0 16px; }
 }
 
 .site-footer p { color: var(--on-dark-muted); }
+
+.site-footer .mark {
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
 
 .site-footer .brand-name .ink { color: var(--on-dark); }
 .site-footer .brand-name .teal { color: var(--teal-bright); }

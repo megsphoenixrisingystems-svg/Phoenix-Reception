@@ -13,7 +13,7 @@ contact.html    Lead form — "Book a Demo", "Talk to Us", and per-plan "Get Sta
 contact.php     Form handler, sends mail via PHP's mail() (works on 20i out of the box)
 css/styles.css  Shared styles
 js/main.js      Nav toggle, contact-form logic, site-wide config
-assets/         Favicon / logo mark (SVG)
+assets/         Favicon and logo mark (PNG, cropped from the official Phoenix Rising Automation logo)
 robots.txt, sitemap.xml
 ```
 
