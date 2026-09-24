@@ -8,7 +8,7 @@ const PHOENIX_CONFIG = {
   phone: "(850) 694-1657",
   phoneHref: "tel:+18506941657",
   email: "hello@phoenixrisingautomation.com",
-  calendlyUrl: "https://cal.com/phoenixrisingautomation-meghan/30min",
+  calendlyUrl: "https://cal.com/phoenixrisingautomation-meghan/discovery-call",
 };
 
 document.addEventListener("DOMContentLoaded", () => {
